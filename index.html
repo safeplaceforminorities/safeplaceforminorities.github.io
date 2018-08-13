@@ -1,0 +1,181 @@
+<!-- File: ./templates/index.html -->
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="app.css">
+
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://images.unsplash.com/photo-1429152937938-07b5f2828cdd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bffbf0bd2aa99179b0ae83d23c8bfa9&auto=format&fit=crop&w=500&q=60');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFAEAE;
+
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color:  #B4D8E7;
+  color: black;
+  opacity: 0.2;
+}
+.topnav a.active {
+  background-color:  #B4D8E7;
+  color: white;
+}
+.bg-1 {
+      background-color: #E96D63;
+      color: #ffffff;
+  }
+.bg-2 {
+      background-color: #7FCA9F;
+      color: #ffffff;
+  }
+.bg-3 {
+      background-color: #F4BA70;
+  }
+.bg-4 {
+      background-color: #85C1F5;
+      color: #ffffff;
+  }
+.bg-5 {
+      background-color: #4A789C;
+      color: #ffffff;
+  }
+</style>
+      </head>
+      <body>
+
+        <div class="topnav" id="myTopnav">
+       <a href="safeplace.html" >Home</a>
+       <a href="index.html" class="active">Chatroom</a>
+       <a href="articles.html" >Articles/Stories</a>
+       <a href="contact.html" >Contact</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       </a>
+     </div>
+       <script>
+       function myFunction() {
+         var x = document.getElementById("myTopnav");
+         if (x.className === "topnav") {
+             x.className += " responsive";
+         } else {
+             x.className = "topnav";
+         }
+       }
+       </script>
+<p>
+        <!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LET'S<span class="w3-hide-small"> CHAT</span><br>
+    <box>You might want to talk to us:<br>
+      -because you need to rant<br>
+      -because you just don't understand<br>
+      -because you need advice</box></center
+  </div>
+</div>
+
+              <footer class="mastfoot">
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="chatbubble">
+            <div class="unexpanded">
+              <div class="title">Chat with A counselor</div>
+            </div>
+            <div class="expanded chat-window">
+              <div class="login-screen container">
+                <form id="loginScreenForm">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="fullname" placeholder="Name*" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email Address*" required>
+                  </div>
+                  <button type="submit" class="btn btn-block btn-primary">Start Chat</button>
+                </form>
+              </div>
+              <div class="chats">
+                <div class="loader-wrapper">
+                  <div class="loader">
+                    <span>{</span><span>}</span>
+                  </div>
+                </div>
+                <ul class="messages clearfix">
+                </ul>
+                <div class="input">
+                  <form class="form-inline" id="messageSupport">
+                    <div class="form-group">
+                      <input type="text" autocomplete="off" class="form-control" id="newMessage" placeholder="Enter Message">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="https://js.pusher.com/4.0/pusher.min.js"></script>
+        <script src="jquery.js"></script>
+        <script src="popper.js"></script>
+        <script src="bootstrap.js"></script>
+        <script src="axios.js"></script>
+        <script src="app.js"></script>
+      </body>
+    </html>

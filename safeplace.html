@@ -1,0 +1,252 @@
+<html lang="en">
+  <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFAEAE;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:  #B4D8E7;
+  color: black;
+  opacity: 0.2;
+}
+
+.topnav a.active {
+  background-color:  #B4D8E7;
+  color: white;
+}
+
+.bg-1 {
+      background-color: #E96D63;
+      color: #ffffff;
+  }
+
+
+
+.bg-2 {
+      background-color: #7FCA9F;
+      color: #ffffff;
+  }
+
+.bg-3 {
+      background-color: #F4BA70;
+  }
+
+.bg-4 {
+      background-color: #85C1F5;
+      color: #ffffff;
+  }
+
+.bg-5 {
+      background-color: #4A789C;
+      color: #ffffff;
+  }
+
+
+h1,h2,h3,h4,h5,h6
+{font-family: "Helvetica";}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CCCCCC;
+  }
+
+
+
+</style>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
+}
+</script>
+
+<body>
+     <div class="topnav" id="myTopnav">
+<a href="home.html" class="active">Home</a>
+<a href="index.html" >Chatroom</a>
+<a href="articles.html">Articles/Stories</a>
+<a href="contact.html" >Contact</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+
+
+</a>
+</div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<br><br>
+<div class="w3-content" style="max-width:1600px">
+<!-- Image header -->
+<header class="w3-display-container w3-wide" id="home">
+<!-- <img class="w3-image" src="/w3images/jane.jpg" alt="Fashion Blog" width="1600" height="1060"> -->
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1"></li>
+  <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+  <div class="item active">
+   <center><img src="https://files.slack.com/files-pri/TBY4DK116-FC532GF3Q/loveislove.jpg" alt="Los Angeles" height=700px ;></center>
+  </div>
+  <div class="item">
+    <center><img src="https://images.unsplash.com/photo-1522621032211-ac0031dfbddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5e9ffb0b1d2860eb4ffb6c9c676b04c&auto=format&fit=crop&w=500&q=60" alt="Chicago" height= 700px ;"></center>
+  </div>
+
+  <div class="item">
+    <center><img src="https://images.unsplash.com/photo-1516239482977-b550ba7253f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ac048ebf08101e4a9e4277e2fcca5a9&auto=format&fit=crop&w=500&q=60" alt="New york" height= 700px ;"></center>
+  </div>
+   <div class="item">
+    <center><img src="https://images.unsplash.com/photo-1504131598085-4cca8500b677?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8446f6ef503f987ab584ed83203b8369&auto=format&fit=crop&w=400&q=60" alt="Chicago" height= 700px ;"></center>
+  </div>
+ <div class="item">
+    <center><img src="https://images.unsplash.com/photo-1529943959075-b823294940bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0074b2735633d803e30ceb87ddb33860&auto=format&fit=crop&w=400&q=60" alt="Los Angeles" height= 700px ;"></center>
+  </div>
+   <div class="item">
+    <center><img src="https://images.unsplash.com/photo-1483995564125-85915c11dcfe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d6634cc8cb13155de9842bcc1520cdc1&auto=format&fit=crop&w=400&q=60" alt="New york" height= 700px ;"></center>
+  </div>
+   <div class="item">
+   <center> <img src="https://images.unsplash.com/photo-1530047625168-4b29bfbbe1fc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=80d3b79de96c47b48c7775aaef5ae2ee&auto=format&fit=crop&w=400&q=60" alt="Chicago" height= 700 px;"></center>
+  </div>
+
+</div>
+<!-- Left and right controls -->
+
+</div>
+</div>
+<div class="w3-display-left w3-padding-large">
+  <h1 class="w3-text-black">Safe Place</h1>
+  <h1 class="w3-jumbo w3-text-black w3-hide-small"><b>for<br>Minorities</b></h1>
+  <h6><button class="w3-button w3-black w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="index.html'">Chat with Us!!</button></h6>
+</div>
+</header>
+<br>
+<br>
+<br><br><br><br>
+<center><img src="https://files.slack.com/files-pri/TBY4DK116-FC3T8ERE1/hands.png" class="img-square" alt="Bird"s></center>
+<br>
+<br>
+<br>
+  <div class="container text-center bg-2">
+    <h3>What is a safe space?</h3>
+    <center><img src="https://files.slack.com/files-pri/TBY4DK116-FC3T8FUAZ/people.png" class="img-square" alt="Bird"s>
+    <center>A safe place is a place where you visit and no one judges you. It is where you can be who you truly are and comfortable, where everyone accepts who you are and the diversity you bring.</center>
+    <h3></h3><br>
+  </div>
+  <br>
+  <div class="container text-center bg-3">
+    <h3>A place to talk</h3>
+    <img src="https://files.slack.com/files-pri/TBY4DK116-FC36V996V/lovely.png" class="img-square" alt="Chat"s>
+    <center>Our chatroom offers our visitors a place to talk to a counselor about experiences that they have had. The counselor will help answer complex questions and give light to complicated and unfair situations along with providing solutions.</center>
+    <h3></h3><br>
+  </div>
+  <br>
+  <div class="container text-center bg-4">
+    <h3>Who we are</h3>
+    <img src="https://files.slack.com/files-pri/TBY4DK116-FC322QBJ4/laptop.png" class="img-square" alt="Chat"s>
+    <center>We are three young women. We met at girls who code and we have seen the cruel reality of how minorities are treated. I, Rhomin, was the one who came up with the idea. Lauren and Luciana have worked alongside me tirelessly to make this project a reality. We are proud of what we've achieved and hope that this or even the idea of this could be helpful to those who are open to it.</center>
+    <h3></h3><br>
+  </div>
+<h3><p class="w3-large w3-center w3-padding-16">Race Demographics in The United States</p></h3>
+
+<div class="container text-center bg-1">
+<p class="w3-wide">White</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75.3%">75.3%</div>
+</div>
+<br>
+</div>
+<div class="container text-center bg-2">
+<p class="w3-wide">Hispanic American</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:16.7%">16.7%</div>
+</div>
+<br>
+</div>
+<div class="container text-center bg-3">
+<p class="w3-wide"></i>Black American</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:12.3%">12.3%</div>
+</div>
+<br>
+</div>
+<div class="container text-center bg-4">
+<p class="w3-wide"></i>Asian American</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:4.7%">4.7%</div>
+</div>
+<br>
+</div>
+<div class="container text-center bg-5">
+<p class="w3-wide">Middle Eastern American</p>
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:2%">2%</div>
+</div>
+<br>
+</div>
+</div>
+<p>
+  <p>
+
+</body>
+<footer>
+  <div class="topnav" id="myTopnav">
+    <a href="safeplace.html" >Home</a>
+    <a href="index.html" >Chatroom</a>
+    <a href="articles.html">Articles/Stories</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </a>
+  </div>
+
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+</footer>
+</html>
